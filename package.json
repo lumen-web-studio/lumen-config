@@ -1,0 +1,20 @@
+{
+  "name": "@lumen/config",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Shared ESLint, TypeScript and Prettier config for Lumen projects",
+  "exports": {
+    ".": "./index.mjs",
+    "./prettier.json": "./prettier.json",
+    "./tsconfig/nextjs.json": "./tsconfig/nextjs.json",
+    "./tsconfig/nextjs-root.json": "./tsconfig/nextjs-root.json"
+  },
+  "files": ["index.mjs", "prettier.json", "tsconfig"],
+  "dependencies": {
+    "eslint-config-prettier": "^10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9",
+    "eslint-config-next": ">=15"
+  }
+}
